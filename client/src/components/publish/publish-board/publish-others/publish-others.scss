@@ -1,0 +1,20 @@
+@import '../../../../style/shared.scss';
+
+.publish-others-container{
+    width: 100%;
+    display: flex; justify-content: center; flex-wrap: wrap;
+
+    div{
+        width: 100px;
+        padding: 10px; margin: 10px;
+        background-color: #FFFFFF;
+        text-align: center;
+
+        span{
+            font-size: 1.05rem; font-weight: bold;
+            &:hover{color: $main-orange;}
+        }
+
+        &:hover{cursor: pointer;}
+    }
+}

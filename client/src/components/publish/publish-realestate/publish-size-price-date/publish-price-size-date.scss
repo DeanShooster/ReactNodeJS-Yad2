@@ -1,0 +1,21 @@
+
+
+.date-check-box-container{
+    width: 100%;
+    display: flex; flex-wrap: wrap;
+ 
+    input{ width: 250px !important;}
+
+    .date-checkbox{
+        margin-right: 10px;
+        display: flex;
+
+        .checkbox{
+            margin-left: 10px;
+            display: flex; align-items: center;
+
+            input{ width: 20px !important; height: 20px !important;}
+            label{ margin: 0 !important;}
+        }
+    }
+}

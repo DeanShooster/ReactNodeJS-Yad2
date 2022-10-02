@@ -1,0 +1,17 @@
+
+
+.burger-menu{
+    display: flex; align-items: center; height: 4.625rem;
+    color: #606060;
+
+    .menu{ 
+        font-size: 1.75rem; margin-left: 5px; 
+        @media(max-width:500px) { font-size: 1.5rem;}
+    }
+    span{ 
+        font-size: 1.7rem;
+        @media(max-width:500px) { font-size: 1.25rem;}
+    }
+
+    &:hover{ cursor: pointer;}
+}

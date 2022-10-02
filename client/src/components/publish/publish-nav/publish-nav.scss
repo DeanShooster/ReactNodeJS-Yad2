@@ -1,0 +1,27 @@
+@import '../../../style/shared.scss';
+
+
+.publish-nav-container{
+    padding-left: 50px;
+    display: flex;
+    white-space: nowrap;
+
+    .publish-profile-container{
+        display: flex; align-items: center;
+        color: $main-orange;
+
+        .publish-profile-icon{
+            font-size: 1.15rem;
+            margin-bottom: -3px; margin-left: 5px;
+        }
+
+        &:hover{ cursor: pointer;}
+    }
+
+    .publish-contact-container{
+        margin-right: 20px;
+        display: flex; align-items: center;
+        .contact-mobile-icon{ color: $main-orange; font-size: 1.5rem; }
+        &:hover{cursor: pointer;}
+    }
+}

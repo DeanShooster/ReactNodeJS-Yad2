@@ -1,0 +1,18 @@
+
+
+.publish-address-form-container{
+
+    .disable-arrows-number-input{
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
+        input[type=number] { -moz-appearance: textfield; }
+    }
+
+    .house-number-input-wrapper{ width: 125px !important; }
+
+    .publish-floors-container{
+        display: flex; align-items: center; flex-wrap: wrap;
+
+        .floor-number-wrapper{ width: 150px !important; margin-left: 15px !important; }
+        .floor-checkbox-wrapper{ display: flex; align-items: center; margin-top: 25px; }
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../../style/shared.scss';
+
+.user-nav-bar{
+    height: 100%; padding: 0; margin-right: auto;
+    display: flex; align-items: center;
+    list-style: none;
+    font-size: 1rem;
+
+    ul{
+        height: 100%; padding: 0;
+        display: flex; align-items: center;
+        list-style: none;
+        font-size: 1rem;
+
+        li{
+            display: flex; justify-content: center; align-items: center; text-align: center;
+            position: relative;
+            height: 100%; padding: 0 10px;  margin-left: 3px;
+
+            @media(max-width: 1500px){ margin-left: 10px;}
+
+            span{ color: #00000099;}
+            &:hover{ cursor: pointer; background-color: rgb(251, 246, 246);}
+            .user-nav-bar-icon{ 
+                font-size: 1.35rem; 
+                @media(max-width: 1500px){ font-size: 1.5rem;}
+            }
+        }
+    }
+
+    button{
+        display: flex; justify-content: center; align-items: center;
+        background-color: $button-green; color: #fff;
+        border: none; border-radius: 20px;
+        height: calc($header-height / 2 + 5px); width: 190px; margin-right: 8px; 
+        font-weight: bold; font-size: 1rem;
+
+        @media(max-width: 500px){ margin: 0 0 0 5px; width: 170px; font-size: .85rem; height: calc($header-height / 3  + 5px); }
+
+        .new-advert-icon{ margin-left: 5px;}
+        &:hover{ cursor: pointer;  background-color: #179864;}
+    }
+}

@@ -1,0 +1,27 @@
+
+.generic-sub-header-container{
+    height: 50px; width: 100%;
+    display: flex; justify-content: space-between; z-index: 1000;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 6px 0 rgb(0 0 0 / 10%);
+
+    ul{
+        margin: 0; 
+        display: flex; 
+        list-style: none;
+
+        li{
+            padding: 0 15px;
+            display: flex; align-items: center;
+            font-weight: 500; font-size: 1rem; white-space: nowrap; 
+            line-height: 50px;
+
+            a{text-decoration: none; color: #00000099; }
+            .doron{ width: 20px; height: 20px;}
+            .yad2-logo{ width: 35px; height: 25px;}
+            span{ margin-left: 5px; margin-bottom: -5px; font-size: 1.25rem;}
+
+            &:hover{ cursor: pointer; background-color: rgb(251, 246, 246);}
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../style/shared.scss';
+
+.login-page{
+    background-color: #fcfbe9;
+    height: 100vh;
+
+    .login-sign-container{
+        width: 90%; margin: 85px auto; 
+        display: flex; justify-content: space-evenly;
+
+        @media(max-width: 900px) { margin: 0; width: 100%; height: 100vh;}
+
+        .login-mobile-container{
+            position: relative;
+            text-align: center;
+
+            .login-arrow-home{
+                position: absolute; top:0; left: 0;
+                font-size: 1.75rem;
+                &:hover{cursor: pointer;}
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../../style/shared.scss';
+
+.yad2-nav{
+    padding: 15px 0 25px 0; margin: auto;
+    list-style: none;
+    width: 60%;
+    display: flex; justify-content: space-evenly;
+
+    @media(max-width: 900px) { width: 100%;}
+    @media(max-width: 600px) { flex-flow: column; align-items: center; line-height: 2.25;}
+
+    li{ &:hover{ cursor: pointer; color: $main-orange; text-decoration: underline;} }
+}

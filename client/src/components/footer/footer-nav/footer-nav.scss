@@ -1,0 +1,22 @@
+@import '../../../style/shared.scss';
+
+.footer-nav{
+    width: 75%; margin: auto; max-width: 1500px;
+    display: flex; justify-content: space-evenly;
+
+    @media(max-width: 900px) { width: 100%; margin: 0;}
+    @media(max-width: 700px) { flex-wrap: wrap; justify-content: center; }
+
+    ul{
+        padding: 0;
+        list-style: none;
+
+        @media(max-width: 700px){ width: 50%; text-align: center;}
+
+        li{
+            line-height: 1.75;
+            color: #CCCCCC;
+            &:hover{ cursor: pointer; color: $main-orange; text-decoration: underline;}
+        }
+    }
+}

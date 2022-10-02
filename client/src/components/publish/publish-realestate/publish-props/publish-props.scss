@@ -1,0 +1,114 @@
+@import '../../../../style/shared.scss';
+
+
+.publish-props-form-container{
+
+    .parking-balcony-container{
+        height: 40px; width: 200px;
+        display: flex; align-items: center;
+        border: 1px solid #ccc; border-radius: 3px;
+
+        span{
+            width: 25%; height: 100%;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center;
+            border-left: 1px solid #ccc;
+            &:nth-child(4) {border: none;}
+            &:nth-child(1){ &:hover{ background-color: rgb(176, 176, 176); color: #363636;}  }
+            &:hover{ cursor: pointer; color: $main-orange; }
+        }
+    }
+
+
+    .props-container{
+        width: 80%;
+        display: flex; align-items: center; flex-wrap: wrap;
+
+        @media(max-width: 900px) { width: 100%; justify-content: center;}
+
+        h3{ margin: 7px 0 20px 0; width: 100%;}
+
+        div{
+            width: 115px; padding: 7px; margin: 0 0 15px 20px;
+            display: flex; align-items: center;
+            border: 1px solid #ccc; border-radius: 25px;
+
+            @media(max-width: 900px) { width: 90px;}
+            @media(max-width: 500px) { width: 30%;}
+
+            span{margin-right: 5px; white-space: nowrap; }
+            &:hover{ cursor: pointer; color: $main-orange; }
+        }
+    }
+
+    .state-about-container{
+        width: 50%;
+
+        @media(max-width: 900px){ width: 70%;}
+        @media(max-width: 700px){ width: 85%;}
+        @media(max-width: 550px){ width: 100%;}
+
+        .about-container{
+            width: 100%;
+
+            .text-stats-container{
+                margin: 10px 0 20px 0; width: 100%;
+                display: flex; align-items: center; justify-content: space-between;
+
+                @media(max-width: 500px) { flex-flow: column; }
+
+                .text-stats{
+                    width: 300px; height: 30px;
+                    position: relative;
+                    box-sizing: content-box;
+                    background-color: #f3f0f0;
+                    border-radius: 25px; border-bottom: 1px solid #ddd; 
+                    box-shadow: inset 0 1px 2px rgb(0 0 0 / 40%), 0 -1px 1px #fff, 0 1px 0 #fff;
+                    overflow: hidden;
+
+                    @media(max-width: 500px){ width: 100%; margin-bottom: 7px;}
+
+                    .text{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); white-space: nowrap; z-index: 2;}
+
+                    .filler{
+                        height: 100%; max-width: 100%;
+                        position: absolute; top: 0; right: 0; z-index: 1;
+                        border-radius: 25px;
+                        width: 150px;
+                        background-size: 30px 30px;
+                        background-image: linear-gradient(135deg,hsla(0,0%,100%,.15) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.15) 0,hsla(0,0%,100%,.15) 75%,transparent 0,transparent);
+                        animation: glide linear 7s infinite;
+                    }
+                    .filler-orange{ background-color: rgb(241, 73, 19);}
+                    .filler-yellow{ background-color: rgb(251, 175, 0);}
+                    .filler-light-green{ background-color: rgb(204, 217, 72);}
+                    .filler-green{ background-color: rgb(67, 199, 112);}
+                }
+                
+                .word-count{ font-size: 1.1rem;}
+            }
+        }
+
+        .textarea-container{
+            position: relative;
+
+            textarea{
+                width: 100%; padding: 16px 10px 20px 70px; height: 135px;
+                box-sizing: border-box;
+                font-size: 1rem; font-family: Rubik,sans-serif;
+                background-color: #fff;
+                border: 1px solid #ccc; border-radius: 4px;
+                resize:  none;
+                &:focus{ outline: none;}
+            }
+
+            .clear-textarea{ position: absolute; top: 5%; left: 2%; &:hover{ cursor: pointer;} }
+        }
+    }
+}
+
+
+@keyframes glide{
+    0%{ background-position-x: left;}
+    100%{ background-position-x: right;}
+}

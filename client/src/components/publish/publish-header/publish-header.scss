@@ -1,0 +1,14 @@
+
+
+.publish-header{
+    width: 100%;
+    display: flex; justify-content: space-between;
+    background-color: #FFFFFF;
+
+    .logo-title-wrapper{
+        padding-right: 50px;
+        display: flex; align-items: center;
+
+        h3{ margin: 0; font-weight: 400;}
+    }
+}

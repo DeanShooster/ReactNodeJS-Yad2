@@ -1,0 +1,26 @@
+@import '../../../../style/shared.scss';
+
+.publish-mainstream-container{
+    width: 100%;
+    display: flex; justify-content: center; flex-wrap: wrap;
+    div{
+        width: 250px; padding: 2rem; min-height: 175px; margin: 0 10px 10px 10px;
+        display: flex; flex-flow: column; align-items: center;
+        text-align: center;
+        background-color: #ffffff; box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 7px;
+
+        @media(max-width: 800px){ width: 400px; margin-bottom: 20px;}
+
+        span{ color: #808080; }
+
+        .publish-mainstream-icon{ font-size: 4.5rem;}
+
+        h3{
+            margin: 15px 0 5px 0;
+            font-size: 1.5rem; font-weight: 500;
+        }
+
+        &:hover{ span{ color: $main-orange;} cursor: pointer;}
+    }
+}

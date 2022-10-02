@@ -1,0 +1,73 @@
+
+
+.intro-text{
+    margin-bottom: 25px;
+    p{margin: 0 0 7px 0;}
+}
+
+.upload-main-pic-video-container{
+    display: flex; justify-content: center;
+
+    @media(max-width: 500px) { flex-wrap: wrap;}
+
+    .upload-container{
+        width: 300px; height: 175px; margin-left: 20px; margin-bottom: 20px;
+        position: relative;
+        display: flex;  align-items: center; justify-content: center;
+        border: 2px dashed gray; border-radius: 5px;
+        color: gray;
+        background: #ffffff;
+
+        @media(max-width: 500px) { width: 100%;}
+    
+        input {
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+            text-indent: -999em;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .upload{
+            display: flex; flex-flow: column; justify-content: center; align-items: center;
+            .upload-icon{ font-size: 1.5rem;}
+        }
+    }
+
+    .upload-main-pic{
+        border: 4px solid gray;
+    }
+}
+
+.main-pic-sub-pic-hr-seperator{ margin: 30px 0 30px 0; width: 100%; }
+
+.upload-sub-pictures-container{
+    display: flex; flex-wrap: wrap; justify-content: center;
+
+    .upload-container{
+        width: 25%; height: 175px; margin-left: 20px; margin-bottom: 20px;
+        position: relative;
+        display: flex;  align-items: center; justify-content: center;
+        border: 2px dashed gray; border-radius: 5px;
+        color: gray;
+        background: #ffffff;
+
+        @media(max-width: 750px) { width: 35%;}
+        @media(max-width: 550px) { width: 100%;}
+    
+        input {
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+            text-indent: -999em;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .upload{
+            display: flex; flex-flow: column; justify-content: center; align-items: center;
+            .upload-icon{ font-size: 1.5rem;}
+        }
+    }
+}

@@ -1,0 +1,18 @@
+
+
+.publish-title-container{
+    margin: 0 10px 0 0;
+    display: flex; align-items: center;
+
+    .number-container{
+        height: 1.5rem; width: 1.5rem; margin-left: 10px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 1.15rem;
+        color: #999999;
+        border: 3px solid #999999; border-radius: 50%;
+    }
+
+    .publish-title-checkmark{ margin-top: 3px; }
+    .selected-checked-number{ color: #0fca80; border: 3px solid #0fca80; }
+    h2{ margin: 0; font-weight: 300;}
+}

@@ -1,0 +1,16 @@
+@import '../../../style/shared.scss';
+
+.publish-board{
+    width: 100%;
+
+    .publish-title{ text-align: center; font-weight: 500; }
+
+    button{
+        padding: 7px 20px 7px 20px; margin-top: 5px;
+        font-size: 1.15rem;
+        color: #FFF; background-color: $main-orange;
+        border: none; border-radius: 3px;
+
+        &:hover{ cursor: pointer;}
+    }
+}

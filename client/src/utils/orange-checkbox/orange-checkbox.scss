@@ -1,0 +1,9 @@
+
+.orange-checkbox{
+    width: 1.05rem; height: 1.05rem;
+    background-color: orange;
+    filter: hue-rotate(155deg);
+
+    &:hover{ cursor: pointer;}
+}
+

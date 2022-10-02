@@ -1,0 +1,110 @@
+@import '../../../../../../../style/shared.scss';
+
+.state-commercial-dropbox-container{
+
+    background-color: #FFFFFF;
+    border: 1px solid #e5e5e5;
+    padding: 10px 20px 0 0;
+
+    h5{
+        margin: 0;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .property-info{
+        position: relative;
+        padding: 0 5% 0 5%;
+        line-height: 1.25rem;
+        font-size: .95rem;
+        height: 2.5rem;
+        overflow: hidden;
+
+        .property-mist{
+            position: absolute; left: 0; bottom: 0;
+            width: 100%; height: 1em;
+            background-image: linear-gradient(180deg,hsla(0,0%,100%,.001) 0,#fff);
+        }
+    }
+
+    .property-info-extend-reduce-button{
+        text-decoration: underline;
+        color: $main-orange; font-weight: bold; font-size: 1.05rem;
+        text-align: center;
+        &:hover{ cursor: pointer;}
+    }
+
+    .property-state-container{
+        width: 85%;
+        margin: 0 auto 15px 0;
+        display: flex; flex-wrap: wrap;
+        white-space: nowrap;
+
+        div{
+            margin: 0 2rem 0 2rem;
+            line-height: 2.5rem; font-size: .9rem;
+
+            span{ font-weight: bold;}
+        }
+    }
+
+    .property-props-container{
+        width: 75%;
+        margin: 0 auto 15px auto;
+        display: flex; flex-wrap: wrap; align-items: center;
+        font-size: .9rem;
+        white-space: nowrap;
+
+        @media(max-width: 900px){ width: 100%;}
+
+        div{
+            width: 20%;
+            display: flex; align-items: center;
+            line-height: 2.5rem;
+
+            @media(max-width: 700px){ width: 30%;}
+            @media(max-width: 450px){ width: 50%;}
+
+            span{ margin-left: 10px; font-size: 1.25rem; }
+        }
+    }
+
+    .utils-container{
+        width: 100%;
+        padding: 10px 0 10px 0;
+        display: flex; justify-content: space-between;
+        border-top: 2px solid #e5e5e5;
+
+        @media(max-width: 600px) { flex-flow: column; justify-content: center; align-items: center; line-height: 2rem;}
+
+        .contact-icons-container{
+            font-size: 1.25rem; 
+            display: flex; 
+
+            span{ 
+                display: flex; align-items: center; justify-content: center;
+                margin: 0 15px 0 0; padding: 5px;
+                background-color: #EEEEEE;
+                border-radius: 50%;
+                
+                &:hover{ cursor: pointer;}
+            }
+        }
+
+        .commerical-info-error-container{
+            padding-left: 10px;
+            display: flex; align-items: center;
+
+            .error{
+                font-weight: bold; font-size: .85rem;
+                color: #4e4e4e;
+                &:hover{ cursor: pointer; color: $main-orange; }
+            }
+
+            .info{
+                font-size: .85rem;
+                margin-right: 15px;
+            }
+        }
+    }
+}

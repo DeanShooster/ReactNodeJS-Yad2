@@ -1,0 +1,15 @@
+@import './style/shared.scss';
+
+body{
+    margin: 0;
+    direction: rtl;
+    font-family: $main-font;
+    color: $main-text-color;
+    background-color: rgb(246, 244, 244);
+}
+
+
+.disable-arrows-number-input{
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
+    input[type=number] { -moz-appearance: textfield; }
+}

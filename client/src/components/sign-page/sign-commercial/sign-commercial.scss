@@ -1,0 +1,23 @@
+@import '../../../style/shared.scss';
+
+.login-commercial{
+    width: 40%;
+    color: $main-text-color;
+    display: flex; flex-flow: column; align-items: center; justify-content: center;
+    h1{
+        margin: 0;
+        font-weight: 300; font-size: 2.25rem;
+    }
+    .login-commercial-icon-container{
+        width: 100%; margin-top: 35px;
+        display: flex;  align-items: center; justify-content: space-evenly;
+
+        div{
+            display: flex; flex-flow: column; justify-content: center; align-items: center;
+            img{
+                margin-bottom: 10px;
+                width: 60px; height: 60px;
+            }
+        }
+    }
+}
